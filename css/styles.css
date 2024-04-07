@@ -31,6 +31,15 @@
     right: 20px;
 }
 
+.main-notification
+{
+    border: solid;
+    color:blue;
+    position: fixed;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
 .notification-container
 {
     display: flex;
