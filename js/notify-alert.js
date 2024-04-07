@@ -14,7 +14,7 @@ function showNotifications(message)
         {
             if(permission === "granted")
             {
-                var notification = new notfication(document.title, {body: message})
+                var notification = new notification(document.title, {body: message})
             }
         });
     }

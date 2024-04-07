@@ -20,6 +20,7 @@ const registerSW = async () =>
 const requestNotificationPermission = async () =>
 {
     const permission = await Notification.requestPermission();
+    return permission;
 }
 
 if (permission !== 'granted')
@@ -32,3 +33,4 @@ if (permission !== 'granted')
 
 checkPermission()
 registerSW()
+requestNotificationPermission()
