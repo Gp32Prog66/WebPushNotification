@@ -11,6 +11,32 @@ const checkPermission = () =>
     }
 }
 
+var userPermission = Notification.permission;
+
+if(userPermission === "granted")
+{
+    showingNotification();
+}
+else
+{
+    alert("Denied");
+}
+
+
+function showingNotification()
+{
+    var title = "Notification has been turned on";
+    var body = "This is a message to let you know that you allowed notifications to be turned on";
+
+    var notify = new Notification(title, {body});
+
+    notify.onclick = () =>
+    {
+        notify.close();
+        
+    }
+}
+
 const registerSW = async () =>
 {
     const registration = await navigator.serviceWorker.register('sw.js');
