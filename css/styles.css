@@ -55,6 +55,23 @@
     bottom: 20px;
 }
 
+.switch-page
+{
+    padding: 20px 40px;
+    background-color:blue;
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    font-style: oblique;
+    bottom:10px;
+    right:10px;
+}
+
+.requestNotificationPermission
+{
+    color: blue;
+}
+
 .notification-container
 {
     display: flex;
