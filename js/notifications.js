@@ -23,6 +23,11 @@ const requestNotificationPermission = async () =>
     return permission;
 }
 
+function displayText()
+{
+    alert("Display This Text On Screen");
+}
+
 if (permission !== 'granted')
 {
     throw new Error("Notification permission is not granted")

@@ -15,6 +15,7 @@ function showNotifications(message)
             if(permission === "granted")
             {
                 var notification = new notification(document.title, {body: message})
+                alert("Displaying This Text On Screen");
             }
         });
     }
