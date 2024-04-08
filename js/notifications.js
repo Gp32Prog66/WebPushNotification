@@ -23,6 +23,17 @@ const requestNotificationPermission = async () =>
     return permission;
 }
 
+
+function userInput() 
+{
+
+var inputUser = document.querySelector("#inputUser");
+
+inputUser.alert(inputUser);
+
+}
+
+
 function displayText()
 {
     alert("Display This Text On Screen");
@@ -39,3 +50,4 @@ if (permission !== 'granted')
 checkPermission()
 registerSW()
 requestNotificationPermission()
+displayText()
