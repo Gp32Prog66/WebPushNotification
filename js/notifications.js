@@ -10,7 +10,7 @@ const checkPermission = () =>
         throw new Error('Notification is not supported')
     }
 }
-
+//Show Notifications
 var userPermission = Notification.permission;
 
 if(userPermission === "granted")
