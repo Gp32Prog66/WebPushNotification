@@ -24,13 +24,11 @@ const requestNotificationPermission = async () =>
 }
 
 
-function userInput() 
+function userInput(userIn) 
 {
+     userIn= prompt("Enter Something and I Will Echo it Back!");
 
-var inputUser = document.querySelector("#inputUser");
-
-inputUser.alert(inputUser);
-
+     alert(userIn);
 }
 
 
