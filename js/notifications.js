@@ -17,13 +17,14 @@ const registerSW = async () =>
     return registration;
 }
 
+//Turn on Notification Button
 const requestNotificationPermission = async () =>
 {
     const permission = await Notification.requestPermission();
     return permission;
 }
 
-
+//User Input
 function userInput(userIn) 
 {
      userIn= prompt("Enter Something and I Will Echo it Back!");
@@ -31,7 +32,7 @@ function userInput(userIn)
      alert(userIn);
 }
 
-
+//Displaying This Text on Screen
 function displayText()
 {
     alert("Display This Text On Screen");
